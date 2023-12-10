@@ -1,0 +1,14 @@
+﻿@page "/"
+@rendermode InteractiveServer
+@inject SweetAlertService Swal
+
+<PageTitle>Home</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<button @onclick="@(async ()=>await Swal.FireAsync("Test!"))">Test, klick!</button>
+
+
+
